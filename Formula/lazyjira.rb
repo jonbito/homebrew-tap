@@ -1,20 +1,20 @@
 class Lazyjira < Formula
   desc "A terminal-based user interface for JIRA"
   homepage "https://github.com/jonbito/lazyjira"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/jonbito/lazyjira/releases/download/v0.1.0/lazyjira-aarch64-apple-darwin.tar.xz"
-      sha256 "6055bc1d279b4658d9edb456cc1906a0d7cfc46bd1b450761168145af79683c0"
+      url "https://github.com/jonbito/lazyjira/releases/download/v0.2.0/lazyjira-aarch64-apple-darwin.tar.xz"
+      sha256 "2148f0015d0d7942cf08350e5096fa3a22a21ef6a2e093523bea6e0107f26bdc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jonbito/lazyjira/releases/download/v0.1.0/lazyjira-x86_64-apple-darwin.tar.xz"
-      sha256 "2f2185075a072a4ad733b42d8bf043fda7f978604f8588d742421a5f6170e020"
+      url "https://github.com/jonbito/lazyjira/releases/download/v0.2.0/lazyjira-x86_64-apple-darwin.tar.xz"
+      sha256 "fb420b5b39192c311df0cb5d1eee2303ae74f2cca8818cf25408d1ade2e21419"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/jonbito/lazyjira/releases/download/v0.1.0/lazyjira-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "f9fdd8dd82b925b0a4addf2187db791653abec490f8ded009ba39c03015ccecb"
+    url "https://github.com/jonbito/lazyjira/releases/download/v0.2.0/lazyjira-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "d7aa86803889b5bb01f62dd0768998124cc5759d6676e474cebb909c44bde4e1"
   end
   license "MIT"
 
